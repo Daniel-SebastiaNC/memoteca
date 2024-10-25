@@ -9,6 +9,9 @@ import { CreateThinkComponent } from './components/thinking/create-think/create-
 import { FormsModule } from '@angular/forms';
 import { ListThinkingComponent } from './components/thinking/list-thinking/list-thinking.component';
 import { ThinkComponent } from './components/thinking/think/think.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DeleteThinkingComponent } from './components/thinking/delete-thinking/delete-thinking.component';
+import { EditThinkComponent } from './components/thinking/edit-think/edit-think.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { ThinkComponent } from './components/thinking/think/think.component';
     FooterComponent,
     CreateThinkComponent,
     ListThinkingComponent,
-    ThinkComponent
+    ThinkComponent,
+    DeleteThinkingComponent,
+    EditThinkComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

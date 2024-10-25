@@ -3,10 +3,10 @@
   <p class="conteudo">{{ think.conteudo }}</p>
   <p class="autoria"><b>{{ think.autoria }}</b></p>
   <div class="acoes">
-    <button class="botao-editar">
-      <img src="/assets/images/icone-editar.png" alt="Ícone de editar">
+    <button class="botao-editar" routerLink="/thinking/edit-think/{{think.id}}">
+      <img src="/assets/images/icone-editar.png"  alt="Ícone de editar">
     </button>
-    <button class="botao-excluir">
+    <button class="botao-excluir" routerLink="/thinking/delete-thinking/{{ think.id }}">
       <img src="/assets/images/icone-excluir.png" alt="Ícone de excluir">
     </button>
   </div>
