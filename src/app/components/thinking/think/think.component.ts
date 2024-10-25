@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Think } from '../thinking';
 
 @Component({
   selector: 'app-think',
@@ -6,7 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './think.component.css'
 })
 export class ThinkComponent {
-  @Input() think = {
+  @Input() think: Think = {
+    id: 0,
     conteudo: '',
     autoria: '',
     modelo: ''
